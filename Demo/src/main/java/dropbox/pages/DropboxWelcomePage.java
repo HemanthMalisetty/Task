@@ -47,7 +47,7 @@ public class DropboxWelcomePage extends BaseClass
 	
 	public void selectFile() throws AWTException, InterruptedException
 	{
-		String flPath = "C:\\Users\\heman\\Desktop\\Amazon_Testcase.xlsx";
+		String flPath = System.getProperty("user.dir") +"\\Amazon_Testcase.xlsx";
 		
 		Clipboard cb = Toolkit.getDefaultToolkit().getSystemClipboard();
 		cb.setContents(new StringSelection(flPath), null);
